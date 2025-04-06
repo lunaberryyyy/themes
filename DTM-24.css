@@ -1,6 +1,6 @@
 /**
  * @name Discord rectified
- * @version 1.1
+ * @version 1.1.1
  * @description A theme based on Discord the way it should be.
  * @author Lunaberry_
  */
@@ -61,10 +61,10 @@ height: unset !important;
         button[aria-label="Start An Activity"] {
             display: none;
         }
-        button[aria-label="Inbox"] {
+        [aria-label="Inbox"] {
             display: none;
         }
-        button[aria-label="Help"] {
+        [aria-label="Help"] {
             display: none;
         }
   /*play again apps*/
@@ -75,9 +75,6 @@ height: unset !important;
             display: none;
         }
   /*dm buttons for nitro and shop*/
-        [data-list-item-id="private-channels-uid_58___nitro"] {
-            display: none;
-        }
-        [data-list-item-id="private-channels-uid_58___shop"] {
-            display: none;
+        [href="/store"] {
+                       display: none;
         }
