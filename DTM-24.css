@@ -60,6 +60,8 @@ height: unset !important;
 }
 
 /*Stupid shit that never should have been added, like wtf discord.*/
+        /* hide disabled icons (e.g. show user profile when you're in a call with that person) */
+        .iconDisabled__9293f { display: none !important; }
         button[aria-label="Start an Activity"] {
             display: none !important;
         }
@@ -89,3 +91,11 @@ height: unset !important;
         [href="/shop"] {
             display: none !important;
 }
+
+
+
+/*TO DO
+Camera hide also removes from the incall UI
+make things more dynamic with variables to be customized
+change around UI color to better match old discord
+*/
