@@ -1,6 +1,6 @@
 /**
  * @name Discord rectified
- * @version 1.1.2
+ * @version 1.2.0
  * @description A theme based on Discord the way it should be.
  * @author Lunaberry_
  */
@@ -8,6 +8,7 @@
 
 /* -------Config---------- */
 --remove-inbox-button: none; /* accepted values (none, visible) */
+--remove-help-button: none; /* accepted values (none, visible) */
 /*------Experimental Config-----*/
 
 --resizeable-dm-list: visible; /* accepted values (none, visible) */
@@ -33,6 +34,10 @@
 }
 
 /* Top window bar */
+.notice__6e2b9 { /* integrate banners with title bar */
+    margin-top: -2.75%;
+    margin-right: 12%;
+  }
 .bar_c38106 {
     position: unset !important;
 }
@@ -61,11 +66,17 @@ height: unset !important;
         button[aria-label="Start An Activity"] {
             display: none !important;
         }
+        [class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none;}
+        div.itemsContainer_ef3116 > div > div:has(div[class="pill__5bc7e"]) { display: none; }
+        button[aria-label="Noise Suppression powered by Krisp"] {  display: none; }
+        button[aria-label="Turn On Camera"]    {  display: none; }
+        [class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none; }
+
         [aria-label="Inbox"] {
-            display: none !important;
+            display: var(--remove-inbox-button) !important;
         }
         [aria-label="Help"] {
-            display: none !important;
+            display: var(--remove-help-button) !important;
         }
   /*play again apps*/
         .container__675e5 {
