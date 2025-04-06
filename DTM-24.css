@@ -1,13 +1,13 @@
 /**
- * @name DTM-24 
+ * @name Discord rectified
  * @version 1.0
- * @description A theme based on Discord the way it was before the 2025 visual refresh.
- * @author Lunaberry
+ * @description A theme based on Discord the way it should be.
+ * @author Lunaberry_
  */
 :root{
 
 /* -------Config---------- */
-
+--remove-inbox-button: none; /* accepted values (none, visible) */
 /*------Experimental Config-----*/
 
 --resizeable-dm-list: visible; /* accepted values (none, visible) */
@@ -53,3 +53,11 @@
 .itemsContainer_ef3116, .tree_ef3116 {
 height: unset !important;
 }
+
+/*Stupid shit that never should have been added, like wtf discord.*/
+button[aria-label="Start an Activity"] {
+    display: none;
+  }
+button[aria-label="Start An Activity"] {
+    display: none;
+  }
