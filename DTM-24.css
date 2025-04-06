@@ -1,0 +1,55 @@
+/**
+ * @name DTM-24 
+ * @version 1.0
+ * @description A theme based on Discord the way it was before the 2025 visual refresh.
+ * @author Lunaberry
+ */
+:root{
+
+/* -------Config---------- */
+
+/*------Experimental Config-----*/
+
+--resizeable-dm-list: visible; /* accepted values (none, visible) */
+
+}
+
+/* ----------------Theme -----------------*/
+
+/* Activity Bar */
+
+ .visual-refresh .panels_c48ade {
+     /*width: calc(84% - var(--custom-panels-spacing)* 2) !important; */
+     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width));
+     margin-left: 64px;
+     border-radius: 0px !important;
+     bottom: 0px !important;
+}
+
+/* Disallow Resizing of dm list */
+
+.visual-refresh .sidebarResizeHandle_c48ade {
+     display: var(--resizeable-dm-list) !important;
+}
+
+/* Top window bar */
+.bar_c38106 {
+    position: unset !important;
+}
+.visual-refresh .base_c48ade {
+    grid-template-rows: [top] 25px [titleBarEnd] min-content [noticeEnd] 1fr [end];
+}
+.winButton_c38106 {
+     margin-top: 10px;
+}
+.trailing_c38106, .winButtons_c38106 {
+    justify-content: flex-end;
+    margin-top: -10px;
+}
+.winButtonsWithDivider_c38106:before {
+    margin-top: 10px;
+}
+/*Server list*/
+.itemsContainer_ef3116, .tree_ef3116 {
+height: unset !important;
+}
