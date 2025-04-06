@@ -1,6 +1,6 @@
 /**
  * @name Discord rectified
- * @version 1.1.1
+ * @version 1.1.2
  * @description A theme based on Discord the way it should be.
  * @author Lunaberry_
  */
@@ -56,25 +56,28 @@ height: unset !important;
 
 /*Stupid shit that never should have been added, like wtf discord.*/
         button[aria-label="Start an Activity"] {
-            display: none;
+            display: none !important;
         }
         button[aria-label="Start An Activity"] {
-            display: none;
+            display: none !important;
         }
         [aria-label="Inbox"] {
-            display: none;
+            display: none !important;
         }
         [aria-label="Help"] {
-            display: none;
+            display: none !important;
         }
   /*play again apps*/
         .container__675e5 {
-            display: none;
+            display: none !important;
         }
         .visual-refresh .sectionDivider__35e86 {
-            display: none;
+            display: none !important;
         }
   /*dm buttons for nitro and shop*/
         [href="/store"] {
-                       display: none;
+            display: none !important;
         }
+        [href="/shop"] {
+            display: none !important;
+}
