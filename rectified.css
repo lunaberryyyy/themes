@@ -8,8 +8,12 @@
 
 :root {
     /* --- Config --- */
-    --remove-inbox-button: none;    /* accepted values (none, visible) */
-    --remove-help-button:  none;    /* accepted values (none, visible) */
+    --remove-inbox-button: none;        /* accepted values (none, visible) */
+    --remove-help-button:  none;        /* accepted values (none, visible) */
+    --code-block-background: #121214; /* Code block background color */
+    --user-area-background: #121214;  /* User area background color */
+    --main-ui-background: #121214;    /* Main UI background color */
+    --chat-background: #1a1a1e;       /* Chat background color */
 
     /* --- Experimental Config --- */
     --primary-sidebar-resizer: visible;  /* accepted values (none, visible) */
@@ -86,8 +90,15 @@ button.experimentButton_e131a9 > div > div > svg {
     margin-top: -15%;
 }
 
+/* --- Chat interface --- */
+.visual-refresh .chatContent_f75fb0 {
+    background-color: var(--chat-background) !important; }
 
-
+/* --- Code blocks --- */
+.visual-refresh .markup__75297 code { background-color: var(--code-block-background) !important; }
+/* --- Main UI --- */
+.visual-refresh .bg__960e4 { background-color: var(--main-ui-background) !important; } /*Title bar*/
+.visual-refresh .guilds_c48ade { background-color: var(--main-ui-background) !important; } /*Serverbar*/
 /* --- Other Tweaks --- */
 .iconDisabled__9293f { display: none !important; } /* Remove disabled icons (e.g. show user profile when you're in a call with that person) */
 em .emoji { transform: skew(-14deg); } /* Make markdown italicization apply to emojis */
