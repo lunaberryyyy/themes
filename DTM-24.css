@@ -1,0 +1,101 @@
+/**
+ * @name Discord rectified
+ * @version 1.2.0
+ * @description A theme based on Discord the way it should be.
+ * @author Lunaberry_ & Femboyfin
+ */
+:root{
+
+/* -------Config---------- */
+--remove-inbox-button: none; /* accepted values (none, visible) */
+--remove-help-button: none; /* accepted values (none, visible) */
+/*------Experimental Config-----*/
+
+--resizeable-dm-list: visible; /* accepted values (none, visible) */
+
+}
+
+/* ----------------Theme -----------------*/
+
+/* User area */
+
+ .visual-refresh .panels_c48ade {
+     /*width: calc(84% - var(--custom-panels-spacing)* 2) !important; */
+     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width));
+     margin-left: 64px;
+     border-radius: 0px !important;
+     bottom: 0px !important;
+}
+
+/* Disallow Resizing of dm list */
+
+.visual-refresh .sidebarResizeHandle_c48ade {
+     display: var(--resizeable-dm-list) !important;
+}
+
+/* Top window bar */
+.notice__6e2b9 { /* integrate banners with title bar */
+    margin-top: -2.75%;
+    margin-right: 12%;
+  }
+.bar_c38106 {
+    position: unset !important;
+}
+.visual-refresh .base_c48ade {
+    grid-template-rows: [top] 25px [titleBarEnd] min-content [noticeEnd] 1fr [end];
+}
+.winButton_c38106 {
+     margin-top: 10px;
+}
+.trailing_c38106, .winButtons_c38106 {
+    justify-content: flex-end;
+    margin-top: -10px;
+}
+.winButtonsWithDivider_c38106:before {
+    margin-top: 10px;
+}
+/*Server list*/
+.itemsContainer_ef3116, .tree_ef3116 {
+height: unset !important;
+}
+
+/*Stupid shit that never should have been added, like wtf discord.*/
+        /* hide disabled icons (e.g. show user profile when you're in a call with that person) */
+        .iconDisabled__9293f { display: none !important; }
+        button[aria-label="Start an Activity"] {
+            display: none !important;
+        }
+        button[aria-label="Start An Activity"] {
+            display: none !important;
+        }
+        [class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none;}
+        div.itemsContainer_ef3116 > div > div:has(div[class="pill__5bc7e"]) { display: none; }
+        button[aria-label="Noise Suppression powered by Krisp"] {  display: none; }
+        button[aria-label="Turn On Camera"]    {  display: none; }
+        [class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none; }
+
+        [aria-label="Inbox"] {
+            display: var(--remove-inbox-button) !important;
+        }
+        [aria-label="Help"] {
+            display: var(--remove-help-button) !important;
+        }
+  /*play again apps*/
+        .container__675e5 {
+            display: none !important;
+        }
+  /*dm buttons for nitro and shop*/
+        [href="/store"] {
+            display: none !important;
+        }
+        [href="/shop"] {
+            display: none !important;
+}
+
+
+
+/*TO DO
+Camera hide also removes from the incall UI
+make things more dynamic with variables to be customized
+change around UI color to better match old discord
+*/
