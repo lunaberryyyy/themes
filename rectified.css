@@ -4,98 +4,94 @@
  * @description A theme based on Discord the way it should be.
  * @author lunaberry_ & femboyfin
  */
-:root{
 
-/* -------Config---------- */
---remove-inbox-button: none; /* accepted values (none, visible) */
---remove-help-button: none; /* accepted values (none, visible) */
-/*------Experimental Config-----*/
 
---resizeable-dm-list: visible; /* accepted values (none, visible) */
+:root {
+    /* --- Config --- */
+    --remove-inbox-button: none;    /* accepted values (none, visible) */
+    --remove-help-button:  none;    /* accepted values (none, visible) */
 
+    /* --- Experimental Config --- */
+    --primary-sidebar-resizer: visible;  /* accepted values (none, visible) */
 }
 
-/* ----------------Theme -----------------*/
 
-/* User area */
+/* --- Title bar --- */
 
- .visual-refresh .panels_c48ade {
-     /*width: calc(84% - var(--custom-panels-spacing)* 2) !important; */
-     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width));
-     margin-left: 64px;
-     border-radius: 0px !important;
-     bottom: 0px !important;
-}
-
-/* Disallow Resizing of dm list */
-
-.visual-refresh .sidebarResizeHandle_c48ade {
-     display: var(--resizeable-dm-list) !important;
-}
-
-/* Top window bar */
-.notice__6e2b9 { /* integrate banners with title bar */
-    margin-top: -2.75%;
-    margin-right: 12%;
-  }
-.bar_c38106 {
-    position: unset !important;
-}
-.visual-refresh .base_c48ade {
-    grid-template-rows: [top] 25px [titleBarEnd] min-content [noticeEnd] 1fr [end];
-}
-.winButton_c38106 {
-     margin-top: 10px;
-}
+/* Revert DVR title bar changes */
+.bar_c38106 { position: unset !important; } /* Removes title */
+.visual-refresh .base_c48ade { grid-template-rows: [top] 25px [titleBarEnd] min-content [noticeEnd] 1fr [end]; }
+.winButton_c38106 { margin-top: 10px; }
+.winButtonsWithDivider_c38106:before { margin-top: 10px; }
 .trailing_c38106, .winButtons_c38106 {
     justify-content: flex-end;
     margin-top: -10px;
 }
-.winButtonsWithDivider_c38106:before {
-    margin-top: 10px;
-}
-/*Server list*/
-.itemsContainer_ef3116, .tree_ef3116 {
-height: unset !important;
-}
 
-/*Stupid shit that never should have been added, like wtf discord.*/
-        /* hide disabled icons (e.g. show user profile when you're in a call with that person) */
-        .iconDisabled__9293f { display: none !important; }
-        button[aria-label="Start an Activity"] {
-            display: none !important;
-        }
-        button[aria-label="Start An Activity"] {
-            display: none !important;
-        }
-        [class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none;}
-        div.itemsContainer_ef3116 > div > div:has(div[class="pill__5bc7e"]) { display: none; }
-        button[aria-label="Noise Suppression powered by Krisp"] {  display: none; }
-        button[aria-label="Turn On Camera"]    {  display: none; }
-        [class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none; }
+[aria-label="Inbox"] { display: var(--remove-inbox-button) !important; } /* Remove the Inbox button */
+[aria-label="Help"]  { display: var(--remove-help-button)  !important; } /* Remove the Help button */
 
-        [aria-label="Inbox"] {
-            display: var(--remove-inbox-button) !important;
-        }
-        [aria-label="Help"] {
-            display: var(--remove-help-button) !important;
-        }
-  /*play again apps*/
-        .container__675e5 {
-            display: none !important;
-        }
-  /*dm buttons for nitro and shop*/
-        [href="/store"] {
-            display: none !important;
-        }
-        [href="/shop"] {
-            display: none !important;
+.notice__6e2b9 { /* Integrate banner notices into the title bar */
+    margin-top: -2.75%;
+    margin-right: 12%;
 }
 
+/* --- Serverbar --- */
+.visual-refresh .guilds_c48ade { height: 200% !important; } /* Revert DVR change preventing serverbar list entries from going below the height of the User Area */
+div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none; } /* Remove "Discover" button */
 
 
-/*TO DO
-Camera hide also removes from the incall UI
-make things more dynamic with variables to be customized
-change around UI color to better match old discord
+/* --- Primary sidebar --- */
+.visual-refresh .sidebarResizeHandle_c48ade { display: var(--primary-sidebar-resizer) !important; } /* Controls sidebar resizability */
+[href="/store"] { display: none !important; } /* Remove Nitro tab */
+[href="/shop"]  { display: none !important; }  /* Remove Shop tab */
+
+
+/* --- User Area --- */
+.visual-refresh .panels_c48ade { /* Reverts the DVR change making the User Area overflow into the Serverbar */
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width));
+    margin-left: 64px;
+    border-radius: 0px !important;
+    bottom: 0px !important;
+}
+
+/* Button removal */
+[class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none; } /* Soundboard */
+button[aria-label="Start An Activity"] { display: none !important; }                            /* Activities (English, US)*/
+button[aria-label="Start an Activity"] { display: none !important; }                            /* Activities (English, UK)*/
+button[aria-label="Noise Suppression powered by Krisp"] { display: none; }                      /* Krisp */
+button[aria-label="Turn On Camera"] { display: none; }                                          /* Camera */
+
+/* Move Screenshare button in line with the disconnect button */
+button[aria-label="Share Your Screen"] {
+    width: 9%;
+    margin-top: -14.1%;
+    margin-left: 80%;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+button[aria-label="Share Your Screen"]:hover { background-color: rgba(255, 255, 255, 0.15) !important; }
+
+button.experimentButton_e131a9 > div > div > svg {
+    position: absolute;
+    width: 60% !important;
+    margin-left: -30%;
+    margin-top: -15%;
+}
+
+
+
+/* --- Other Tweaks --- */
+.iconDisabled__9293f { display: none !important; } /* Remove disabled icons (e.g. show user profile when you're in a call with that person) */
+em .emoji { transform: skew(-14deg); } /* Make markdown italicization apply to emojis */
+
+
+
+/* TODO
+
+- User Area Button removal for the Camera also removes the camera button from call UI
+- Variablize most tweaks for easier customization
+- Adjust blurple color to match pre-2021 branding (maybe logo/wordmark too?)
+- Apply emoji italicization apply in the Text Area formatting preview, not just in the sent message
 */
