@@ -32,8 +32,8 @@
 [aria-label="Help"]  { display: var(--remove-help-button)  !important; } /* Remove the Help button */
 
 .notice__6e2b9 { /* Integrate banner notices into the title bar */
-    margin-top: -2.75%;
-    margin-right: 12%;
+    margin-top: -1%;
+    margin-right: 15%;
 }
 
 /* --- Serverbar --- */
