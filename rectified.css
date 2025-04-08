@@ -1,6 +1,6 @@
-/**
+/*
  * @name Discord rectified
- * @version 1.3.3
+ * @version 1.3.4
  * @description A theme based on Discord the way it should be.
  * @author lunaberry_ & femboyfin
  */
@@ -72,11 +72,11 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
 .visual-refresh .guilds_c48ade { background-color: var(--main-ui-background) !important; } /*Serverbar*/
 
 /* Button removal */
-[class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none; } /* Soundboard */
-button[aria-label="Start An Activity"] { display: none !important; }                            /* Activities (English, US)*/
-button[aria-label="Start an Activity"] { display: none !important; }                            /* Activities (English, UK)*/
-button[aria-label="Noise Suppression powered by Krisp"] { display: none; }                      /* Krisp */
-button[aria-label="Turn On Camera"] { display: none; }                                          /* Camera */
+[class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none; }       /* Soundboard */
+button[aria-label="Start An Activity"] { display: none !important; }                                  /* Activities (English, US)*/
+button[aria-label="Start an Activity"] { display: none !important; }                                  /* Activities (English, UK)*/
+button[aria-label="Noise Suppression powered by Krisp"] { display: none; }                            /* Krisp */
+button[aria-label="Turn On Camera"]:not(.colorable_f1ceac.experimentDark_f1ceac) { display: none; }   /* Camera */
 
 /* Move Screenshare button in line with the disconnect button */
 .actionButtons_e131a9 {
@@ -85,14 +85,20 @@ button[aria-label="Turn On Camera"] { display: none; }                          
     margin-right: 60px
 }
 
-button[aria-label="Share Your Screen"] {
-    width: 9%;
-    margin-top: -50px;
-    margin-left: 80%;
+/* Prep all instances of the Screenshare button to have a custom hover effect */
+button[aria-label="Share Your Screen"] { 
     background-color: transparent !important;
     border-color: transparent !important;
 }
 
+/* resize only the share your screen button from within the user area */
+button[aria-label="Share Your Screen"]:not(.colorable_f1ceac.experimentDark_f1ceac) { 
+    width: 9%;
+    margin-top: -50px;
+    margin-left: 80%;
+}
+
+/* add a hover effect to the share your screen button */
 button[aria-label="Share Your Screen"]:hover { background-color: rgba(255, 255, 255, 0.15) !important; }
 
 button.experimentButton_e131a9 > div > div > svg {
@@ -105,13 +111,12 @@ button.experimentButton_e131a9 > div > div > svg {
 /* --- Other Tweaks --- */
 .iconDisabled__9293f { display: none !important; } /* Remove disabled icons (e.g. show user profile when you're in a call with that person) */
 em .emoji { transform: skew(-14deg); } /* Make markdown italicization apply to emojis */
-
+.italics_ada32f { transform: skew(-14deg) !important; } /* Make markdown italicization apply to emojis within the preview area */
 
 
 /* TODO
-
-- User Area Button removal for the Camera also removes the camera button from call UI
+- Look into possibly reenabling user profile viewing within calls
+- sever list appears to have lost its ability to scroll on long server lists
 - Variablize most tweaks for easier customization
 - Adjust blurple color to match pre-2021 branding (maybe logo/wordmark too?)
-- Apply emoji italicization apply in the Text Area formatting preview, not just in the sent message
 */
