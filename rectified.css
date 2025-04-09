@@ -1,6 +1,6 @@
 /*
  * @name Discord rectified
- * @version 1.3.4
+ * @version 1.3.5
  * @description A theme based on Discord the way it should be.
  * @author lunaberry_ & femboyfin
  */
@@ -41,7 +41,7 @@
 }
 
 /* --- Serverbar --- */
-.visual-refresh .guilds_c48ade { height: 200% !important; } /* Revert DVR change preventing serverbar list entries from going below the height of the User Area */
+.visual-refresh .guilds_c48ade { height: 100% !important; } /* Revert DVR change preventing serverbar list entries from going below the height of the User Area */
 div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none; } /* Remove "Discover" button */
 
 
@@ -116,7 +116,6 @@ em .emoji { transform: skew(-14deg); } /* Make markdown italicization apply to e
 
 /* TODO
 - Look into possibly reenabling user profile viewing within calls
-- sever list appears to have lost its ability to scroll on long server lists
 - Variablize most tweaks for easier customization
 - Adjust blurple color to match pre-2021 branding (maybe logo/wordmark too?)
 */
