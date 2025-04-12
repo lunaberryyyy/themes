@@ -54,12 +54,13 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
 /* --- User Area --- */
 .visual-refresh .panels_c48ade { /* Reverts the DVR change making the User Area overflow into the Serverbar */
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width));
-    margin-left: 64px;
+    margin-left: var(--custom-guild-list-width);
     border-radius: 0px !important;
     bottom: 0px !important;
 }
 .visual-refresh .panel__5dec7 { background-color: var(--user-area-background) !important;} /*Activity panel*/
 .visual-refresh .panels_c48ade { background-color: var(--user-area-background) !important; } /*User area*/
+.visual-refresh .panels_c48ade {--custom-panels-spacing: 0px !important;}
 
 /* --- Chat interface --- */
 .visual-refresh .chatContent_f75fb0 { background-color: var(--chat-background) !important; }
