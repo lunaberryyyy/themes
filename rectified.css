@@ -1,6 +1,6 @@
 /*
  * @name Discord rectified
- * @version 1.3.5
+ * @version 1.3.6
  * @description A theme based on Discord the way it should be.
  * @author lunaberry_ & femboyfin
  */
@@ -25,11 +25,10 @@
 /* Revert DVR title bar changes */
 .bar_c38106 { position: unset !important; } /* Removes title */
 .visual-refresh .base_c48ade { grid-template-rows: [top] 25px [titleBarEnd] min-content [noticeEnd] 1fr [end]; }
-.winButton_c38106 { margin-top: 10px; }
-.winButtonsWithDivider_c38106:before { margin-top: 10px; }
-.trailing_c38106, .winButtons_c38106 {
-    justify-content: flex-end;
-    margin-top: -10px;
+.winButton_c38106 { margin-top: -8%; }
+.winButtonsWithDivider_c38106:before { display: none; }
+.vc-betterFolders-sidebar-grid.base_c48ade:has(.notice__6e2b9) .trailing_c38106 {
+  margin-top: 1.8% !important;
 }
 
 [aria-label="Inbox"] { display: var(--remove-inbox-button) !important; } /* Remove the Inbox button */
@@ -37,7 +36,8 @@
 
 .notice__6e2b9 { /* Integrate banner notices into the title bar */
     margin-top: -1%;
-    margin-right: 15%;
+    margin-right: 8.5%;
+    border-radius: 5px;
 }
 
 /* --- Serverbar --- */
