@@ -87,13 +87,13 @@ button[aria-label="Turn On Camera"]:not(.colorable_f1ceac.experimentDark_f1ceac)
 }
 
 /* Prep all instances of the Screenshare button to have a custom hover effect */
-button[aria-label="Share Your Screen"] { 
+button[aria-label="Share Your Screen"] {
     background-color: transparent !important;
     border-color: transparent !important;
 }
 
 /* resize only the share your screen button from within the user area */
-button[aria-label="Share Your Screen"]:not(.colorable_f1ceac.experimentDark_f1ceac) { 
+button[aria-label="Share Your Screen"]:not(.colorable_f1ceac.experimentDark_f1ceac) {
     width: 9%;
     margin-top: -50px;
     margin-left: 80%;
@@ -113,6 +113,7 @@ button.experimentButton_e131a9 > div > div > svg {
 .iconDisabled__9293f { display: none !important; } /* Remove disabled icons (e.g. show user profile when you're in a call with that person) */
 em .emoji { transform: skew(-14deg); } /* Make markdown italicization apply to emojis */
 .italics_ada32f { transform: skew(-14deg) !important; } /* Make markdown italicization apply to emojis within the preview area */
+button:has(> div.contents__201d5:matches(:where(:contains("Read All")))) { text-overflow: visible; } /* Prevents the "ReadAllNotificationsButton" vencord plugin's button from being unnecessarily cut off by an ellipsis */
 
 
 /* TODO
