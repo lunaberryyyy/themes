@@ -1,6 +1,6 @@
 /*
  * @name Discord rectified
- * @version 1.3.7
+ * @version 1.3.8
  * @description A theme based on Discord the way it should be.
  * @author lunaberry_ & femboyfin
  */
@@ -27,9 +27,12 @@
 .visual-refresh .base_c48ade { grid-template-rows: [top] 25px [titleBarEnd] min-content [noticeEnd] 1fr [end]; }
 .winButton_c38106 { margin-top: -8%; }
 .winButtonsWithDivider_c38106:before { display: none; }
-.vc-betterFolders-sidebar-grid.base_c48ade:has(.notice__6e2b9) .trailing_c38106 {
-  margin-top: 1.4% !important;
+[class="base_c48ade"]:has(.notice__6e2b9) .trailing_c38106 { /* fixes window control margins when banners are present*/
+    margin-top: 1.4% !important;
 }
+/* .vc-betterFolders-sidebar-grid.base_c48ade:has(.notice__6e2b9) .trailing_c38106 {
+  margin-top: 1.4% !important;
+} fixes window control margins when banners are present OLD */ 
 
 [aria-label="Inbox"] { display: var(--remove-inbox-button) !important; } /* Remove the Inbox button */
 [aria-label="Help"]  { display: var(--remove-help-button)  !important; } /* Remove the Help button */
