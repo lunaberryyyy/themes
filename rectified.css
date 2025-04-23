@@ -1,6 +1,6 @@
 /*
  * @name Discord rectified
- * @version 1.3.9
+ * @version 1.4.0
  * @description A theme based on Discord the way it should be.
  * @author lunaberry_ & femboyfin
  */
@@ -44,6 +44,20 @@
 .visual-refresh .guilds_c48ade { height: 100% !important; } /* Revert DVR change preventing serverbar list entries from going below the height of the User Area */
 div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none; } /* Remove "Discover" button */
 
+/* Disable text wrapping for the ServerListIndicators Vencord plugin display, change "SERVERS" to "GUILDS" to fit high server counts */
+@font-face {
+    font-family: 'gg-sans-modified';
+    src: url('https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/ggsans-Normal-modified.woff') format('woff2');
+}
+#vc-friendcount {
+    text-overflow: visible;
+}
+#vc-guildcount {
+    font-family: 'gg-sans-modified', sans-serif;
+    letter-spacing: 0.025rem;
+    text-overflow: visible;
+}
+#vc-guildcount::before { content: "GUILDZ " }
 
 /* --- Primary sidebar --- */
 .visual-refresh .sidebarResizeHandle_c48ade { display: var(--primary-sidebar-resizer) !important; } /* Controls sidebar resizability */
@@ -58,8 +72,8 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
     border-radius: 0px !important;
     bottom: 0px !important;
 }
-.visual-refresh .panel__5dec7 { background-color: var(--user-area-background) !important;} /*Activity panel*/
-.visual-refresh .panels_c48ade { background-color: var(--user-area-background) !important; } /*User area*/
+.visual-refresh .panel__5dec7 { background-color: var(--user-area-background) !important;} /* Activity panel */
+.visual-refresh .panels_c48ade { background-color: var(--user-area-background) !important; } /* User area */
 .visual-refresh .panels_c48ade {--custom-panels-spacing: 0px !important;}
 
 /* --- Chat interface --- */
@@ -69,8 +83,8 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
 .visual-refresh .markup__75297 code { background-color: var(--code-block-background) !important; }
 
 /* --- Main UI --- */
-.visual-refresh .bg__960e4 { background-color: var(--main-ui-background) !important; } /*Title bar*/
-.visual-refresh .guilds_c48ade { background-color: var(--main-ui-background) !important; } /*Serverbar*/
+.visual-refresh .bg__960e4 { background-color: var(--main-ui-background) !important; } /* Title bar */
+.visual-refresh .guilds_c48ade { background-color: var(--main-ui-background) !important; } /* Serverbar */
 
 /* --- Vc Ui --- */
 .visual-refresh .container_a55fdc { background: transparent !important; } /* Screen share blurple gradient removal */
