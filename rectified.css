@@ -1,6 +1,6 @@
 /*
  * @name Discord rectified
- * @version 1.4.0
+ * @version 1.4.1
  * @description A theme based on Discord the way it should be.
  * @author lunaberry_ & femboyfin
  */
@@ -8,12 +8,13 @@
 
 :root {
     /* --- Config --- */
-    --remove-inbox-button: none;        /* accepted values (none, visible) */
-    --remove-help-button:  none;        /* accepted values (none, visible) */
-    --code-block-background: #121214; /* Code block background color */
-    --user-area-background: #0e0e0f;  /* User area background color */
-    --main-ui-background: #121214;    /* Main UI background color */
-    --chat-background: #1a1a1e;       /* Chat background color */
+    --remove-inbox-button:      none;        /* accepted values (none, visible) */
+    --remove-help-button:       none;        /* accepted values (none, visible) */
+    --code-block-background: #121214;      /* Code block background color */
+    --user-area-background:  #0e0e0f;      /* User area background color */
+    --main-ui-background:    #121214;      /* Main UI background color */
+    --chat-background:       #1a1a1e;      /* Chat background color */
+    --color-override:           !important;  /* to allow color changes with nitro themes replace "!important" with "!"  */
 
     /* --- Experimental Config --- */
     --primary-sidebar-resizer: visible;  /* accepted values (none, visible) */
@@ -72,22 +73,22 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
     border-radius: 0px !important;
     bottom: 0px !important;
 }
-.visual-refresh .panel__5dec7 { background-color: var(--user-area-background) !important;} /* Activity panel */
-.visual-refresh .panels_c48ade { background-color: var(--user-area-background) !important; } /* User area */
+.visual-refresh .panel__5dec7 { background-color: var(--user-area-background) var(--color-override);}   /* Activity panel */
+.visual-refresh .panels_c48ade { background-color: var(--user-area-background) var(--color-override); } /* User area */
 .visual-refresh .panels_c48ade {--custom-panels-spacing: 0px !important;}
 
 /* --- Chat interface --- */
-.visual-refresh .chatContent_f75fb0 { background-color: var(--chat-background) !important; }
+.visual-refresh .chatContent_f75fb0 { background-color: var(--chat-background) var(--color-override); }
 
 /* --- Code blocks --- */
 .visual-refresh .markup__75297 code { background-color: var(--code-block-background) !important; }
 
 /* --- Main UI --- */
-.visual-refresh .bg__960e4 { background-color: var(--main-ui-background) !important; } /* Title bar */
-.visual-refresh .guilds_c48ade { background-color: var(--main-ui-background) !important; } /* Serverbar */
+.visual-refresh .bg__960e4 { background-color: var(--main-ui-background) var(--color-override); }     /* Title bar */
+.visual-refresh .guilds_c48ade { background-color: var(--main-ui-background) var(--color-override); } /* Serverbar */
 
 /* --- Vc Ui --- */
-.visual-refresh .container_a55fdc { background: transparent !important; } /* Screen share blurple gradient removal */
+.visual-refresh .container_a55fdc { background: transparent !important; }                             /* Screen share blurple gradient removal */
 
 /* Button removal */
 [class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none; }       /* Soundboard */
