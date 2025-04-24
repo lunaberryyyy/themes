@@ -1,0 +1,3 @@
+# Don't track themes other than rectified.theme.css, letting you can clone to %appdata%\Vencord without tracking unwanted files.
+*.theme.css
+!rectified.theme.css

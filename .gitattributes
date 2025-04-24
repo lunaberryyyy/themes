@@ -1,0 +1,9 @@
+# Automatically set all text files to LF (and redundantly UTF-8 for explicicity)
+* text=auto eol=lf working-tree-encoding=UTF-8
+
+# Manually assign important files their appropriate properties
+# Filename                  Type    Language
+README.md                   text    linguist-language=markdown
+rectified.theme.css         text    linguist-language=css
+ggsans-Normal-modified.woff binary
+.github/                    text
