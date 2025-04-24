@@ -1,4 +1,4 @@
-# Rectified<span style="font-size: 60%; color: grey">.theme.css</span>
+# Rectified
 
 My personal theme for [Vencord](https://vencord.dev) / [BetterDiscord](https://betterdiscord.app)[^1].
 
