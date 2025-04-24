@@ -2,7 +2,7 @@
  * @name Discord rectified
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.4.2
+ * @version 1.5.0
  * @invite EtpZfASJmF
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
@@ -72,11 +72,12 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
 
 /* --- User Area --- */
 .visual-refresh .panels_c48ade { /* Reverts the DVR change making the User Area overflow into the Serverbar */
-    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width));
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 2px);
     margin-left: var(--custom-guild-list-width);
     border-radius: 0px !important;
     bottom: 0px !important;
 }
+.container_e131a9 { border-bottom: 0px solid transparent; } /* Remove seperator between user and active voice / activty panel for better uniformity */
 .visual-refresh .panel__5dec7 { background-color: var(--rec-user-area-background) var(--rec-color-override);}   /* Activity panel */
 .visual-refresh .panels_c48ade { background-color: var(--rec-user-area-background) var(--rec-color-override); } /* User area */
 .visual-refresh .panels_c48ade {--custom-panels-spacing: 0px !important;}
