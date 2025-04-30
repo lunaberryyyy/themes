@@ -2,7 +2,7 @@
  * @name Discord rectified
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.5.0
+ * @version 1.5.1
  * @invite EtpZfASJmF
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
@@ -107,6 +107,12 @@ button[aria-label="Turn On Camera"]:not(.colorable_f1ceac.experimentDark_f1ceac)
     grid-template-columns: none;
     justify-content: right;
     margin-right: 60px
+}
+/* Fix screeshare button sizing and position when using compact mode */
+.visual-refresh.density-compact .button_e131a9 { 
+    max-height: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important; 
 }
 
 /* Prep all instances of the Screenshare button to have a custom hover effect */
