@@ -2,7 +2,7 @@
  * @name Discord rectified
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.5.1
+ * @version 1.5.2
  * @invite EtpZfASJmF
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
@@ -97,6 +97,7 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
 
 /* Button removal */
 [class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none; }       /* Soundboard */
+.button_e131a9:not([aria-label="Share Your Screen"]) { display: none; }                               /* Soundboard */
 button[aria-label="Start An Activity"] { display: none !important; }                                  /* Activities (English, US)*/
 button[aria-label="Start an Activity"] { display: none !important; }                                  /* Activities (English, UK)*/
 button[aria-label="Noise Suppression powered by Krisp"] { display: none; }                            /* Krisp */
