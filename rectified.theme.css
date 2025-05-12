@@ -23,7 +23,11 @@
     /* --- Experimental Config --- */
     --rec-primary-sidebar-resizer: visible;  /* accepted values (none, visible) */
 }
-
+.theme-dark.custom-theme-background { /* Fix Screenshare button background while using a color theme */
+    --bg-overlay-3: transparent !important;
+    --bg-overlay-4: transparent !important;
+    --background-mod-subtle: transparent !important;
+}
 
 /* --- Title bar --- */
 
@@ -117,9 +121,6 @@ button[aria-label="Turn On Camera"]:not(.colorable_f1ceac.experimentDark_f1ceac)
     min-height: 32px !important; 
 }
 
-/* Share screen button hover fix with a color theme */
-.visual-refresh.custom-theme-background .button_e131a9 .buttonColor_e131a9, .visual-refresh.custom-theme-background .button_e131a9.buttonColor_e131a9 { background: transparent !important; }
-
 /* Prep all instances of the Screenshare button to have a custom hover effect */
 button[aria-label="Share Your Screen"] {
     background-color: transparent !important;
@@ -131,6 +132,7 @@ button[aria-label="Share Your Screen"]:not(.colorable_f1ceac.experimentDark_f1ce
     width: 9%;
     margin-top: -50px;
     margin-left: 80%;
+    background: transparent;
 }
 
 /* add a hover effect to the share your screen button */
