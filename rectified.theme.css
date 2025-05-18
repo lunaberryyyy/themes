@@ -2,7 +2,7 @@
  * @name Discord rectified
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.5.4
+ * @version 1.5.5
  * @invite EtpZfASJmF
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
@@ -111,7 +111,11 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
 button[aria-label="Start An Activity"] { display: none !important; }                                  /* Activities (English, US)*/
 button[aria-label="Start an Activity"] { display: none !important; }                                  /* Activities (English, UK)*/
 button[aria-label="Noise Suppression powered by Krisp"] { display: none; }                            /* Krisp */
-button[aria-label="Turn On Camera"]:not(.colorable_f1ceac.experimentDark_f1ceac) { display: none; }   /* Camera */
+button[aria-label="Turn On Camera"]:not(.colorable_f1ceac.centerButton_f1ceac) { display: none; }     /* Camera */
+
+
+/* Set Screenshare button to overflow contents to maintain visibility */
+.lookFilled__201d5 .contents__201d5, .lookLink__201d5 .contents__201d5, .lookOutlined__201d5 .contents__201d5 { overflow: visible;}
 
 /* Move Screenshare button in line with the disconnect button */
 .actionButtons_e131a9 {
@@ -133,7 +137,7 @@ button[aria-label="Share Your Screen"] {
 }
 
 /* resize only the share your screen button from within the user area */
-button[aria-label="Share Your Screen"]:not(.colorable_f1ceac.experimentDark_f1ceac) {
+button[aria-label="Share Your Screen"]:not(.colorable_f1ceac.centerButton_f1ceac) {
     width: 9%;
     margin-top: -50px;
     margin-left: 80%;
