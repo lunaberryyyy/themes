@@ -2,7 +2,7 @@
  * @name Discord rectified
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.5.5.1
+ * @version 1.5.5
  * @invite EtpZfASJmF
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
@@ -103,8 +103,8 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
 .visual-refresh .guilds_c48ade { background-color: var(--rec-main-ui-background) var(--rec-color-override); } /* Serverbar */
 
 /* --- Vc Ui --- */
-.visual-refresh .container_a55fdc { background: transparent !important; }                                         /* Screen share blurple gradient removal */
-[aria-label="Options"] > div.contents__201d5.overlayButtonInner__2f4f7 > svg { margin-right: 20px !important; }   /* fix spacing for options button within call ui */
+.visual-refresh .container_a55fdc { background: transparent !important; }                                                            /* Screen share blurple gradient removal */ 
+.overlayContainer__2f4f7:not(:hover, :focus-within) .overlayButton__2f4f7.hideWhenInactive__2f4f7 { margin-right: 20px !important; } /* fix spacing for options button within call ui */
 
 /* Button removal */
 [class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none; }       /* Soundboard */
