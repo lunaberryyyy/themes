@@ -7,7 +7,6 @@
  * @website https://github.com/lunaberryyyy/themes/
  * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/acrylic-color/acrylic.theme.css
  */
-img[alt] {
-    text-indent: -9999px;
-    display: none;
+.visual-refresh .guilds_c48ade {
+    background-color: red !important;
 }
