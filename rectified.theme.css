@@ -2,12 +2,13 @@
  * @name Discord rectified
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.5.6
+ * @version 1.5.7
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
  * @website https://github.com/lunaberryyyy/themes/
  * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/rectified.css
  */
+
 
 :root {
     /* --- Config --- */
@@ -22,11 +23,8 @@
     /* --- Experimental Config --- */
     --rec-primary-sidebar-resizer: visible;  /* accepted values (none, visible) */
 }
-.theme-dark.custom-theme-background { /* Fix Screenshare button background while using a color theme */
-    --bg-overlay-3: transparent !important;
-    --bg-overlay-4: transparent !important;
-    --background-mod-subtle: transparent !important;
-}
+    /* @import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/acrylic-color/acrylic.theme.css); */ /* remove comments to use acrylic color for discord */
+
 
 /* --- Title bar --- */
 
@@ -79,6 +77,11 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
 .visual-refresh .scroller__99e7c { margin-bottom: 0px !important; } /* Remove dm bottom margin */
 
 /* --- User Area --- */
+.theme-dark.custom-theme-background { /* Fix Screenshare button background while using a color theme */
+    --bg-overlay-3: transparent !important;
+    --bg-overlay-4: transparent !important;
+    --background-mod-subtle: transparent !important;
+}
 .visual-refresh .panels_c48ade { /* Reverts the DVR change making the User Area overflow into the Serverbar */
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 2px);
     margin-left: var(--custom-guild-list-width);
