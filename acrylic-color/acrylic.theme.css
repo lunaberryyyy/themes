@@ -7,3 +7,32 @@
  * @website https://github.com/lunaberryyyy/themes/
  * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/acrylic-color/acrylic.theme.css
  */
+
+
+    /* --- Server bar --- */
+ .visual-refresh .guilds_c48ade {
+    background-color: transparent !important;
+}
+    /* --- Main UI --- */
+.visual-refresh .bg__960e4 { background-color: transparent !important; }     /* Title bar */
+.visual-refresh .guilds_c48ade { background-color: transparent !important; } /* Serverbar */
+.visual-refresh .appMount__51fd7, .visual-refresh body {
+    background: transparent;
+}
+.custom-theme-background .theme-dark, .theme-dark.custom-theme-background {
+    --theme-base-color: transparent !important;
+    --theme-text-color: var(--theme-text-color-dark);                        /* discard currently selected color theme */
+    --theme-base-color-hsl: var(--theme-base-color-dark-hsl);
+}
+.visual-refresh .appMount__51fd7, .visual-refresh body {                     /* background element originally colored grey */
+    background: transparent !important;
+}
+
+
+    /*--- Chat Ui --- */
+.visual-refresh .chat_f75fb0 {
+    background: transparent !important;
+}
+.visual-refresh .chatContent_f75fb0 {
+    background-color: transparent !important;
+}
