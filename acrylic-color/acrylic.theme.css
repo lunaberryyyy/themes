@@ -11,48 +11,48 @@
 
 :root{
   --customforeground: rgba(0,0,0,0.3) !important;
-  --custombackground: rgba(0, 0, 0, 0.1) !important;
+  --custombackground: rgba(0, 0, 0, 0.1);
 }
 
     /* --- Server bar --- */
  .visual-refresh .guilds_c48ade {
-    background-color: var(--custombackground);
+    background-color: var(--custombackground) !important;
 }
 .custom-theme-background .itemsContainer_ef3116 {
-    background: var(--custombackground);
+    background: var(--custombackground) !important;
 }
     /* --- Main UI --- */
 .visual-refresh .bg__960e4 { 
-    background-color: var(--custombackground);                                  /* Title bar */
-    background: var(--custombackground);
+    background-color: var(--custombackground) !important;                                  /* Title bar */
+    background: var(--custombackground) !important;
 }
-.app__160d8 { background-color: var(--custombackground); }                      /* Main background component */                     
-.visual-refresh .guilds_c48ade { background-color: var(--custombackground); }   /* Serverbar */
-.visual-refresh .appMount__51fd7, .visual-refresh body { background: var(--custombackground); }
+.app__160d8 { background-color: var(--custombackground) !important; }                      /* Main background component */                     
+.visual-refresh .guilds_c48ade { background-color: var(--custombackground) !important; }   /* Serverbar */
+.visual-refresh .appMount__51fd7, .visual-refresh body { background: var(--custombackground) !important; }
 .custom-theme-background .theme-dark, .theme-dark.custom-theme-background {
-    --theme-base-color: var(--custombackground);
-    --theme-text-color: var(--theme-text-color-dark);                          /* discard currently selected color theme */
+    --theme-base-color: var(--custombackground) !important;
+    --theme-text-color: var(--theme-text-color-dark);                                      /* discard currently selected color theme */
     --theme-base-color-hsl: var(--theme-base-color-dark-hsl);
 }
-.visual-refresh .appMount__51fd7, .visual-refresh body {                       /* background element originally colored grey */
-    background: var(--custombackground);
+.visual-refresh .appMount__51fd7, .visual-refresh body {                                   /* background element originally colored grey */
+    background: var(--custombackground) !important;
 }
 
 
     /*--- Chat Ui --- */
 .visual-refresh .chat_f75fb0 {
-    background: var(--custombackground);
+    background: var(--custombackground) !important;
 }
 .visual-refresh .chatContent_f75fb0 {
-    background-color: var(--custombackground);
-    background: var(--custombackground); 
+    background-color: var(--custombackground) !important;
+    background: var(--custombackground) !important; 
 }
 .theme-dark .themed__9293f {
-    background: var(--customforeground);                                       /* chat header */
+    background: var(--customforeground);                                                   /* chat header */
 }
 .visual-refresh .channelTextArea_f75fb0 {
-    background: var(--custombackground);                                       /* send a message */
+    background: var(--custombackground) !important;                                        /* send a message */
 }
 :where(.visual-refresh) .themedBackground__74017 {
-    background: var(--customforeground);                                       /* send a message */
+    background: var(--customforeground);                                                   /* send a message */
 }
