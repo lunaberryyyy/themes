@@ -2,7 +2,7 @@
  * @name Discord rectified
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.5.7
+ * @version 1.5.8
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
  * @website https://github.com/lunaberryyyy/themes/
@@ -171,7 +171,7 @@ div[class="sidebar_c48ade theme-dark images-dark hidden_c48ade"]{
 
 
 /* TODO
-- Look into possibly reenabling user profile viewing within calls
+- Dm list is behind userarea on long dm list need to dynamic resize the dm list based on userarea hight
 - Variablize most tweaks for easier customization
 - Adjust blurple color to match pre-2021 branding (maybe logo/wordmark too?)
 */
