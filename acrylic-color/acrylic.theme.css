@@ -11,7 +11,7 @@
 
 :root{
   --customforeground: rgba(0,0,0,0.3) !important;
-  --custombackground: rgba(0, 0, 0, 0.04) !important;
+  --custombackground: rgba(0, 0, 0, 0.1) !important;
 }
 
     /* --- Server bar --- */
