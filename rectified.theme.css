@@ -9,7 +9,7 @@
  * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/rectified.css
  */
 
- /* @import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/acrylic-color/acrylic.theme.css); */  /* remove comments to use acrylic color for discord */
+  /* @import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/acrylic-color/acrylic.theme.css); */  /* remove comments to use acrylic color for discord */
 
 :root {
     /* --- Config --- */
@@ -36,6 +36,7 @@
 [class="base_c48ade"]:has(.notice__6e2b9) .trailing_c38106 { /* fixes window control margins when banners are present*/
     margin-top: 1.4% !important;
 }
+.title__85643{ display:none; } /* Remove Direct messages from titlebar */
 
 [aria-label="Inbox"] { display: var(--rec-remove-inbox-button) !important; } /* Remove the Inbox button */
 [aria-label="Help"]  { display: var(--rec-remove-help-button)  !important; } /* Remove the Help button */
