@@ -2,7 +2,7 @@
  * @name Discord rectified
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.5.8
+ * @version 1.5.9
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
  * @website https://github.com/lunaberryyyy/themes/
@@ -76,6 +76,7 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
 [href="/store"] { display: none !important; } /* Remove Nitro tab */
 [href="/shop"]  { display: none !important; }  /* Remove Shop tab */
 .visual-refresh .scroller__99e7c { margin-bottom: 0px !important; } /* Remove dm bottom margin */
+ul[aria-label="Direct Messages"], ul[class="content__99f8c"] { height: 215% !important; } /* DM list sidebar scroller EXPERIMENTAL - make sure dms always fit on screen */
 
 /* --- User Area --- */
 .theme-dark.custom-theme-background { /* Fix Screenshare button background while using a color theme */
