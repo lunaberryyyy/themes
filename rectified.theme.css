@@ -22,7 +22,7 @@
     --rec-color-override:           !important;  /* to allow color changes with classic color themes replace "!important" with "!"  */
 
     /* --- Experimental Config --- */
-    --rec-primary-sidebar-resizer: visible;  /* accepted values (none, visible) */
+    
 }
 
 
@@ -72,11 +72,8 @@ div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none;
 #vc-guildcount::before { content: "GUILDZ " }
 
 /* --- Primary sidebar --- */
-.visual-refresh .sidebarResizeHandle_c48ade { display: var(--rec-primary-sidebar-resizer) !important; } /* Controls sidebar resizability */
 [href="/store"] { display: none !important; } /* Remove Nitro tab */
 [href="/shop"]  { display: none !important; }  /* Remove Shop tab */
-.visual-refresh .scroller__99e7c { margin-bottom: 0px !important; } /* Remove dm bottom margin */
-ul[aria-label="Direct Messages"], ul[class="content__99f8c"] { height: 215% !important; } /* DM list sidebar scroller EXPERIMENTAL - make sure dms always fit on screen */
 
 /* --- User Area --- */
 .theme-dark.custom-theme-background { /* Fix Screenshare button background while using a color theme */
