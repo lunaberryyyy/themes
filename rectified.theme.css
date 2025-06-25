@@ -141,7 +141,7 @@ button[aria-label="Share Your Screen"] {
 /* resize only the share your screen button from within the user area */
 button[aria-label="Share Your Screen"]:not(.colorable_f1ceac.centerButton_f1ceac) {
     width: 9%;
-    margin-top: -42px; /* was -50px */
+    margin-top: -50px; /* was -50px */
     margin-left: 80%;
     background: transparent;
 }
