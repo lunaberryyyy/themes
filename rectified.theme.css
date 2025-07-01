@@ -162,10 +162,6 @@ em .emoji { transform: skew(-14deg); } /* Make markdown italicization apply to e
 .italics_ada32f { transform: skew(-14deg) !important; } /* Make markdown italicization apply to emojis within the preview area */
 button:has(> div.contents__201d5:matches(:where(:contains("Read All")))) { text-overflow: visible; } /* Prevents the "ReadAllNotificationsButton" vencord plugin's button from being unnecessarily cut off by an ellipsis */
 
-/* Will be removed once discord fixes it */
-div[class="sidebar_c48ade theme-dark images-dark hidden_c48ade"]{
-    grid-template-columns: none !important;
-} /* Fix fullscreen vc having a large blank sidebar from a base discord bug */
 
 
 /* TODO
