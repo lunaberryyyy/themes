@@ -12,6 +12,7 @@
 :root{
   --customforeground: rgba(0,0,0,0.3);
   --custombackground: rgba(0, 0, 0, 0.1);
+  --border-subtle: transparent !important;
 }
 
     /* --- Server bar --- */
@@ -21,6 +22,12 @@
 .custom-theme-background .itemsContainer_ef3116 {
     background: var(--custombackground) !important;
 }
+
+    /* --- DM / channel list --- */
+    .privateChannels__35e86{ background: transparent !important; }
+    .scroller__99e7c{ background: transparent !important; }
+    .searchBar__35e86{ border-bottom: 0px solid transparent !important;}
+
     /* --- Main UI --- */
 .visual-refresh .bg__960e4 { 
     background-color: var(--custombackground) !important;                                  /* Title bar */
@@ -37,9 +44,13 @@
 .visual-refresh .appMount__51fd7, .visual-refresh body {                                   /* background element originally colored grey */
     background: var(--custombackground) !important;
 }
+.theme-dark .children__9293f:after{ background: transparent !important; }
 
+    /*--- User area --- */
+.sidebar_c48ade:after{ background: transparent !important; }
 
     /*--- Chat Ui --- */
+.wrapper_fc8177{ background: transparent !important; }
 .visual-refresh .chat_f75fb0 {
     background: var(--custombackground) !important;
 }
@@ -56,8 +67,12 @@
 :where(.visual-refresh) .themedBackground__74017 {
     background: var(--customforeground) !important;                                                   /* send a message */
 }
-
-
+          /*--- Settings --- */
+.contentRegion__23e6b{ background: transparent !important; }
+.standardSidebarView__23e6b{ background: transparent !important; }
+.layer__960e4{ background: transparent !important; }
+.contentRegionScroller__23e6b{ background-color: transparent !important;}
+.sidebarRegionScroller__23e6b{ background-color: transparent !important;}
 /* To-do / issues */
 /*
 
