@@ -2,7 +2,7 @@
  * @name Discord rectified
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.5.9
+ * @version 1.6
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
  * @website https://github.com/lunaberryyyy/themes/
@@ -19,7 +19,7 @@
     --rec-user-area-background:  #0e0e0f;      /* User area background color */
     --rec-main-ui-background:    #121214;      /* Main UI background color */
     --rec-chat-background:       #1a1a1e;      /* Chat background color */
-    --rec-color-override:           !;  /* to allow color changes with classic color themes replace "!important" with "!"  */
+    --rec-color-override:           !important;  /* to allow color changes with classic color themes replace "!important" with "!"  */
 
     /* --- Experimental Config --- */
     
