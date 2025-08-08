@@ -9,7 +9,7 @@
  * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/rectified.css
  */
 
-  /* @import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/acrylic-color/acrylic.theme.css); */  /* remove comments to use acrylic color for discord */
+  /* @import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/acrylic-color/acrylic.theme.css); */   /* remove comments to use acrylic color for discord */
 
 :root {
     /* --- Config --- */
@@ -19,7 +19,7 @@
     --rec-user-area-background:  #0e0e0f;      /* User area background color */
     --rec-main-ui-background:    #121214;      /* Main UI background color */
     --rec-chat-background:       #1a1a1e;      /* Chat background color */
-    --rec-color-override:           !important;  /* to allow color changes with classic color themes replace "!important" with "!"  */
+    --rec-color-override:           !;  /* to allow color changes with classic color themes replace "!important" with "!"  */
 
     /* --- Experimental Config --- */
     
@@ -30,7 +30,7 @@
 
 /* Revert DVR title bar changes */
 .bar_c38106 { position: unset !important; } /* Removes title */
-.visual-refresh .base_c48ade { grid-template-rows: [top] 25px [titleBarEnd] min-content [noticeEnd] 1fr [end]; }
+.visual-refresh .base_c48ade:not([data-fullscreen="true"]){ grid-template-rows: [top] 25px [titleBarEnd] min-content [noticeEnd] 1fr [end]; }
 .winButton_c38106 { margin-top: -8%; }
 .winButtonsWithDivider_c38106:before { display: none; }
 [class="base_c48ade"]:has(.notice__6e2b9) .trailing_c38106 { /* fixes window control margins when banners are present*/
