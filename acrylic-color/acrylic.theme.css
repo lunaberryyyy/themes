@@ -29,6 +29,7 @@
     .searchBar__35e86{ border-bottom: 0px solid transparent !important;}
 
     /* --- Main UI --- */
+.title_bb0d86 { display: none; }                                                           /* Remove Title Page Status */
 .visual-refresh .bg__960e4 { 
     background-color: var(--custombackground) !important;                                  /* Title bar */
     background: var(--custombackground) !important;
@@ -59,13 +60,13 @@
     background: var(--custombackground) !important; 
 }
 .theme-dark .themed__9293f {
-    background: var(--customforeground) !important;                                                   /* chat header */
+    background: var(--customforeground) !important;                                        /* chat header */
 }
 .visual-refresh .channelTextArea_f75fb0 {
     background: var(--custombackground) !important;                                        /* send a message */
 }
 :where(.visual-refresh) .themedBackground__74017 {
-    background: var(--customforeground) !important;                                                   /* send a message */
+    background: var(--customforeground) !important;                                        /* send a message */
 }
           /*--- Settings --- */
 .contentRegion__23e6b{ background: transparent !important; }
@@ -73,18 +74,15 @@
 .layer__960e4{ background: transparent !important; }
 .contentRegionScroller__23e6b{ background-color: transparent !important;}
 .sidebarRegionScroller__23e6b{ background-color: transparent !important;}
-/* To-do / issues */
-/*
+
+/* To-do / issues 
+
 
 sometimes when switching dms/servers if using a nitro theme the color curently selected flashes into view and then goes back to normal transparency
 
 chat scroller uses nitro color
 
 top chat header has a odd grey color stroke
-
-discord settings section needs to be made transparent aswell
-
-extra polish on the ui like adding more elements to use the customforeground variable
 
 
 */
