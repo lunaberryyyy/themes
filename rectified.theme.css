@@ -1,8 +1,8 @@
 /**
- * @name Discord rectified v1.7
+ * @name Discord rectified v1.7.1
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.7
+ * @version 1.7.1
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
  * @website https://github.com/lunaberryyyy/themes/
@@ -172,3 +172,5 @@
         width: 0 !important;
     }
     .button__85643 { margin-left: -10%; }
+    /* Char Counter plugin */
+    .vc-char-counter { bottom: -20px; }
