@@ -80,7 +80,7 @@
     .visual-refresh.custom-theme-background .panels_c48ade { border-color: transparent !important; } /* Make user area tiles more seamless and integrated into the Ui */
     .container_e131a9 { border-bottom: 0px solid transparent; } /* Remove seperator between user and active voice / activty panel for better uniformity */
     .visual-refresh .panel__5dec7 { background-color: var(--rec-user-area-background) var(--rec-color-override);}   /* Activity panel */
-    .visual-refresh .panels_c48ade { background-color: var(--rec-user-area-background) var(--rec-color-override); } /* User area */
+    .visual-refresh .panels_c48ade { background-color: var(--rec-user-area-background) !important; } /* User area */
     .visual-refresh .panels_c48ade {--custom-panels-spacing: 0px !important;}
 
 /* --- Chat interface --- */
