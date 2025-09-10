@@ -5,7 +5,7 @@
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
  * @website https://github.com/lunaberryyyy/themes/
- * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/acrylic-color/acrylic.theme.css
+ * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/acrylic-color/acrylic.theme.css
  */
 
 
@@ -13,6 +13,8 @@
   --customforeground: rgba(0,0,0,0.3);
   --custombackground: rgba(0, 0, 0, 0.1);
   --border-subtle: transparent !important;
+  --char-counter-POS:            60px;         /* 60px is above send a message box, -20px is below */
+  --use-btmTyping-indicators:    -24px;        /* -24px is above send a message box, 40px is below */
 }
 
     /* --- Server bar --- */
@@ -62,18 +64,43 @@
 .theme-dark .themed__9293f {
     background: var(--customforeground) !important;                                        /* chat header */
 }
-.visual-refresh .channelTextArea_f75fb0 {
+ .visual-refresh .channelTextArea_f75fb0 {
     background: var(--custombackground) !important;                                        /* send a message */
 }
 :where(.visual-refresh) .themedBackground__74017 {
     background: var(--customforeground) !important;                                        /* send a message */
-}
+} 
           /*--- Settings --- */
 .contentRegion__23e6b{ background: transparent !important; }
 .standardSidebarView__23e6b{ background: transparent !important; }
 .layer__960e4{ background: transparent !important; }
 .contentRegionScroller__23e6b{ background-color: transparent !important;}
 .sidebarRegionScroller__23e6b{ background-color: transparent !important;}
+
+
+
+/* NEW EXPERIMENTAL CHANGES */
+
+.channelBottomBarArea_f75fb0 {          /* send a message relative position to move above the odd cutoff*/
+    position: relative !important;
+    margin-bottom: 0px !important;
+    top: -20px !important;
+}
+ .visual-refresh .channelTextArea_f75fb0 {
+    backdrop-filter: blur(5px);
+                                            /* send a message blur*/
+}
+
+.align-chat-input .form_f75fb0 {       /* send a message relative position to move above the odd cutoff*/
+    margin-top: -24px !important;
+    margin-bottom: -55px;
+}
+
+.visual-refresh .chatContent_f75fb0 {  /* Main chat margin to make space for sending a message */
+    margin-bottom: 45px !important; 
+}
+
+
 
 /* To-do / issues 
 
