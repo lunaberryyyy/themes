@@ -51,6 +51,7 @@
 
     /*--- User area --- */
 .sidebar_c48ade:after{ background: transparent !important; }
+.visual-refresh .panels_c48ade { background-color: var(--rec-user-area-background) !important; } /* User area */
 
     /*--- Chat Ui --- */
 .wrapper_fc8177{ background: transparent !important; }
