@@ -1,8 +1,8 @@
 /**
- * @name Discord rectified v1.7.1
+ * @name Discord rectified v1.7.5
  * @author lunaberry_ & femboyfin
  * @description A theme based on Discord the way it should be.
- * @version 1.7.1
+ * @version 1.7.5
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
  * @website https://github.com/lunaberryyyy/themes/
@@ -22,6 +22,10 @@
     --rec-user-area-background:  #0e0e0f;      /* User area background color */
     --rec-main-ui-background:    #121214;      /* Main UI background color */
     --rec-chat-background:       #1a1a1e;      /* Chat background color */
+    --use-btmMessage-padding:      0px;          /* Set to 15px if you change either Bottom Char Counter OR bottom typing indicators */
+    --char-counter-POS:            60px;         /* 60px is above send a message box, -20px is below */
+    --use-btmTyping-indicators:    -24px;        /* -24px is above send a message box, 55px is below */
+
     --rec-color-override:           !;  /* Set to "!important" to use the above color configs for the default "Dark" classic discord theme
                                            Akin to how discord looked pre 2024, remove "important" if you want to use any other classic color theme*/
 }
@@ -76,11 +80,20 @@
     .visual-refresh.custom-theme-background .panels_c48ade { border-color: transparent !important; } /* Make user area tiles more seamless and integrated into the Ui */
     .container_e131a9 { border-bottom: 0px solid transparent; } /* Remove seperator between user and active voice / activty panel for better uniformity */
     .visual-refresh .panel__5dec7 { background-color: var(--rec-user-area-background) var(--rec-color-override);}   /* Activity panel */
-    .visual-refresh .panels_c48ade { background-color: var(--rec-user-area-background) var(--rec-color-override); } /* User area */
+    .visual-refresh .panels_c48ade { background-color: var(--rec-user-area-background) !important; } /* User area */
     .visual-refresh .panels_c48ade {--custom-panels-spacing: 0px !important;}
 
 /* --- Chat interface --- */
     .visual-refresh .chatContent_f75fb0 { background-color: var(--rec-chat-background) var(--rec-color-override); }
+    .chatGradient__36d07 { background: none !important; } /* Removes the bottom chat gradient introduced in the new discord patch */
+    .channelBottomBarArea_f75fb0 { margin-bottom: var(--use-btmMessage-padding) !important; } /* Send chat box POS from bottom of page */
+    .chatTypingGradientAtBottom__36d07 { background: none !Important; } 
+    .align-chat-input .inTextChannel_b88801.base_b88801 { top: var(--use-btmTyping-indicators) !important; }
+    .chatGradientBase__36d07 { /* Resizing typing gradient while not at bottom of page */
+        bottom: 15px !important;
+        right: 0px !important;
+    }
+
 
 /* --- Code blocks --- */
     .visual-refresh .markup__75297 code { background-color: var(--rec-code-block-background) !important; }
@@ -173,4 +186,4 @@
     }
     .button__85643 { margin-left: -10%; }
     /* Char Counter plugin */
-    .vc-char-counter { bottom: -20px; }
+    .vc-char-counter { bottom: var(--char-counter-POS) !important; }
