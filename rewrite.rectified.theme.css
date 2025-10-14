@@ -1,0 +1,33 @@
+/**
+ * @name Discord rectified v1.7.6
+ * @author lunaberry_ & femboyfin
+ * @description A theme based on Discord the way it should be.
+ * @version 1.7.6
+ * @authorId 525024224314654731
+ * @authorLink https://github.com/lunaberryyyy
+ * @website https://github.com/lunaberryyyy/themes/
+ * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/rewrite.rectified.css
+ */
+
+
+/*----------------------config--------------------------*/
+
+/* remove comments to use an acrylic theme for discord */
+/* @import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/acrylic-color/acrylic.theme.css); */
+
+:root {
+    --remove-inbox-button:          none;        /* accepted values (none, visible) */
+    --remove-help-button:           none;        /* accepted values (none, visible) */
+    --remove-nitro-button:          none;        /* accepted values (none, visible) */
+    --remove-shop-button:           none;        /* accepted values (none, visible) */
+}
+
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/TitleBar.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/UserArea.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ServerBar.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/PrimarySidebar.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ChatInterface.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/VCUI.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ButtonRemove.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/Misc.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/CompatibilityPatches.css);
