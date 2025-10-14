@@ -5,7 +5,7 @@
  * @authorId 525024224314654731
  * @authorLink https://github.com/lunaberryyyy
  * @website https://github.com/lunaberryyyy/themes/
- * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/acrylic-color/acrylic.theme.css
+ * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/acrylic-color/acrylic.theme.css
  */
 
 
@@ -51,7 +51,6 @@
 
     /*--- User area --- */
 .sidebar_c48ade:after{ background: transparent !important; }
-.visual-refresh .panels_c48ade { background-color: transparent !important; } /* User area */
 
     /*--- Chat Ui --- */
 .wrapper_fc8177{ background: transparent !important; }

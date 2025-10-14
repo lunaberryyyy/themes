@@ -1,0 +1,20 @@
+/* Read all plugin */
+  button:has(> div.contents__201d5:matches(:where(:contains("Read All")))) { text-overflow: visible; } /* Prevents the "ReadAllNotificationsButton" vencord plugin's button from being unnecessarily cut off by an ellipsis */
+/* Guild server list indicators*/
+#vc-friendcount {
+text-overflow: visible;
+}
+#vc-guildcount {
+    font-family: 'gg-sans-modified', sans-serif;
+    letter-spacing: 0.025rem;
+    text-overflow: visible;
+}
+#vc-guildcount::before { content: "" }
+
+/* Equicord quest compeleter */
+.vc-quest-completer-icon {
+    bottom: 1.5px !important;
+    padding: 0 !important;
+    width: 0 !important;
+}
+.button__85643 { margin-left: -10%; }

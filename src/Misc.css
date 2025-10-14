@@ -1,0 +1,3 @@
+.iconDisabled__9293f { display: none !important; } /* Remove disabled icons (e.g. show user profile when you're in a call with that person) */
+em .emoji { transform: skew(-14deg); } /* Make markdown italicization apply to emojis */
+.italics_ada32f { transform: skew(-14deg) !important; } /* Make markdown italicization apply to emojis within the preview area */

@@ -1,0 +1,2 @@
+    [href="/store"] { display: var(--remove-nitro-button); } /* Remove Nitro tab */
+    [href="/shop"]  { display: var(--remove-shop-button) }  /* Remove Shop tab */

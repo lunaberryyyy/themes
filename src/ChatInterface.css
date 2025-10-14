@@ -1,0 +1,6 @@
+.chatGradient__36d07 { background: none !important; } /* Removes the bottom chat gradient introduced in the new discord patch */
+.chatTypingGradientAtBottom__36d07 { background: none !Important; } 
+.chatGradientBase__36d07 { /* Resizing typing gradient while not at bottom of page */
+    bottom: 15px !important;
+    right: 0px !important;
+}

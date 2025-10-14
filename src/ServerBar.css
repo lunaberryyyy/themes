@@ -1,0 +1,2 @@
+    .visual-refresh .guilds_c48ade { height: 100% !important; } /* Revert DVR change preventing serverbar list entries from going below the height of the User Area */
+    div.itemsContainer_ef3116>div>div:has(div[class="pill__5bc7e"]) { display: none; } /* Remove "Discover" button */

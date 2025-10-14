@@ -1,0 +1,9 @@
+[class="actionButtons_e131a9"] div:has(button[aria-label="Open Soundboard"]) { display: none; }       /* Soundboard */
+.button_e131a9:not([aria-label="Share Your Screen"]) { display: none; }                               /* Soundboard */
+button[aria-label="Start An Activity"] { display: none !important; }                                  /* Activities (English, US)*/
+button[aria-label="Start an Activity"] { display: none !important; }                                  /* Activities (English, UK)*/
+button[aria-label="Noise Suppression powered by Krisp"] { display: none; }                            /* Krisp */
+button[aria-label="Turn On Camera"]:not(.colorable_f1ceac.centerButton_f1ceac) { display: none; }     /* Camera */
+button[aria-label="Share Your Screen"]:not(.colorable_f1ceac.primaryDark_f1ceac) { display: none !important; }
+[aria-label="Inbox"] { display: var(--remove-inbox-button) !important; }                              /* Remove the Inbox button */
+[aria-label="Help"]  { display: var(--remove-help-button)  !important; }
