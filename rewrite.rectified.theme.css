@@ -9,20 +9,20 @@
  * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/rewrite.rectified.css
  */
 
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/TitleBar.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/UserArea.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ServerBar.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/PrimarySidebar.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ChatInterface.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/VCUI.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ButtonRemove.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/Misc.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/CompatibilityPatches.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/src/TitleBar.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/src/UserArea.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/src/ServerBar.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/src/PrimarySidebar.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/src/ChatInterface.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/src/VCUI.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/src/ButtonRemove.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/src/Misc.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/src/CompatibilityPatches.css);
 
 /*----------------------config--------------------------*/
 
 /* remove comments to use an acrylic theme for discord */
-/* @import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/acrylic-color/acrylic.theme.css); */
+/* @import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/main/acrylic-color/acrylic.theme.css); */
 
 :root {
     --remove-inbox-button:          none;        /* accepted values (none, visible) */
