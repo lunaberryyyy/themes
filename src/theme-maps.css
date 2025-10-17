@@ -1,0 +1,16 @@
+.theme-dark{
+/* Onyx */
+--neutral-97: black;      /* Chat interface and member list */                  
+--neutral-91: #0a0a0a;    /* Activity panel */
+--neutral-95: #0a0a0a;    /* Vc user panel */
+
+/* Dark */
+--neutral-86: hsl(var(--neutral-86-hsl)/1); /* Chat interface and member list */
+--neutral-79: var(--neutral-92);            /* Activity panel */
+--neutral-82: transparent;                  /* Vc user panel */
+
+/* Ash */
+--neutral-69: hsl(var(--neutral-69-hsl)/1); /* Chat interface and member list */
+--neutral-64: var(--neutral-73);            /* Activity panel */
+--neutral-66: transparent;                  /* Vc user panel */
+}

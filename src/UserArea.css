@@ -1,14 +1,32 @@
-    .theme-dark.custom-theme-background { /* Fix Screenshare button background while using a color theme */
-        --bg-overlay-3: transparent !important;
-        --bg-overlay-4: transparent !important;
-        --background-mod-subtle: transparent !important;
-    }
-    .visual-refresh .panels_c48ade { /* Reverts the DVR change making the User Area overflow into the Serverbar */
-        width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 2px);
-        margin-left: var(--custom-guild-list-width);
-        border-radius: 0px !important;
-        bottom: 0px !important;
-    }
-    .visual-refresh.custom-theme-background .panels_c48ade { border-color: transparent !important; } /* Make user area tiles more seamless and integrated into the Ui */
-    .container_e131a9 { border-bottom: 0px solid transparent; } /* Remove seperator between user and active voice / activty panel for better uniformity */
-    .visual-refresh .panels_c48ade {--custom-panels-spacing: 0px !important;}
+.theme-dark.custom-theme-background { /* Fix Screenshare button background while using a color theme */
+    --bg-overlay-3: transparent !important;
+    --bg-overlay-4: transparent !important;
+    --background-mod-subtle: transparent !important;
+}
+.visual-refresh .panels_c48ade { /* Reverts the DVR change making the User Area overflow into the Serverbar */
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 2px);
+    margin-left: var(--custom-guild-list-width);
+    border-radius: 0px !important;
+    bottom: 0px !important;
+}
+.visual-refresh.custom-theme-background .panels_c48ade { border-color: transparent !important; } /* Make user area tiles more seamless and integrated into the Ui */
+.container_e131a9 { border-bottom: 0px solid transparent; } /* Remove seperator between user and active voice / activty panel for better uniformity */
+.visual-refresh .panels_c48ade {--custom-panels-spacing: 0px !important;}
+.micButtonParent__37e49 .buttonChevron__37e49{
+display: none;
+}
+.buttons__37e49{
+    gap: 0px !important;                       /* Revert margining */
+    margin-right: -8%;
+}
+.avatarWrapper__37e49 {
+    margin-left: calc(var(--custom-panels-spacing) - var(--custom-guild-list-padding) - 5px); /* Revert margining */
+}
+.rtcConnectionStatus__06d62{
+    margin-left: -5%;
+}
+.ping__06d62.largePing__06d62{
+    scale: 85%;
+    margin-bottom: 17%;
+    margin-right: 1%
+}
