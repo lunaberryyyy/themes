@@ -9,6 +9,15 @@
  * @source https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/rewrite.rectified.css
  */
 
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/TitleBar.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/UserArea.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ServerBar.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/PrimarySidebar.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ChatInterface.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/VCUI.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ButtonRemove.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/Misc.css);
+@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/CompatibilityPatches.css);
 
 /*----------------------config--------------------------*/
 
@@ -21,13 +30,3 @@
     --remove-nitro-button:          none;        /* accepted values (none, visible) */
     --remove-shop-button:           none;        /* accepted values (none, visible) */
 }
-
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/TitleBar.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/UserArea.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ServerBar.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/PrimarySidebar.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ChatInterface.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/VCUI.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/ButtonRemove.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/Misc.css);
-@import url(https://raw.githubusercontent.com/lunaberryyyy/themes/refs/heads/Main/src/CompatibilityPatches.css);
