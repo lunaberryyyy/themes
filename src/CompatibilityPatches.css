@@ -18,3 +18,21 @@ text-overflow: visible;
     width: 0 !important;
 }
 .button__85643 { margin-left: -10%; }
+
+/* Custom tabs compatibility (title integration) */
+.vc-channeltabs-tab-scroller { 
+    margin-top: -2.1%;
+    max-width: 85%; /* Prevent div from overlaping title control buttons*/
+}
+.vc-channeltabs-new-button{ background-color: transparent; }
+[class*=notice]+.vc-channeltabs-container-top { overflow: visible !important; }
+html:has(.vc-channeltabs-tab-scroller) .trailing_c38106, .winButtons_c38106{ margin-top: 0.8%; }
+html:has(.vc-channeltabs-tab-scroller) .winButton_c38106 { margin-top: 0%; }
+html:has(.vc-channeltabs-tab-scroller):has(.notice__6e2b9) .base__5e434:not([data-fullscreen="true"]){ grid-template-rows: [top] 25px [titleBarEnd] min-content [noticeEnd] 1fr [end]; }
+html:has(.vc-channeltabs-tab-scroller) .notice__6e2b9 {
+    margin-top: 0%;
+    margin-right: 73%;
+    border-radius: 3px;
+    height: 90%;
+    margin-bottom: 0%;
+}
