@@ -1,19 +1,18 @@
 /* Revert DVR title bar changes */
 .bar_c38106 { position: unset !important; } /* Removes title */
-.visual-refresh .base__5e434:not([data-fullscreen="true"]){ grid-template-rows: [top] 25px [titleBarEnd] min-content [noticeEnd] 1fr [end]; }
-.winButton_c38106 { margin-top: -8%; }
+.base__5e434:not([data-fullscreen="true"]){ grid-template-rows: [top] 28px [titleBarEnd] min-content [noticeEnd] 1fr [end]; }
+.winButton_c38106 { margin-top: -2%; }
 .winButtonsWithDivider_c38106:before { display: none; }
-[class="base__5e434"]:has(.notice__6e2b9) .trailing_c38106 { /* fixes window control margins only when banners are present*/
-    margin-top: 1.4% !important;
-}
 .title__85643{ display:none; } /* Remove Direct messages from titlebar */
+
 .notice__6e2b9 { /* Integrate banner notices into the title bar */
     margin-top: -1.55%;
-    margin-right: 9.5%;
+    margin-right: 72%;
     border-radius: 3px;
-    height: 425%;
+    height: 100%;
     margin-bottom: -0.5%;
-}
+} 
+
 /* Banner item reposition */
 .closeButton__6e2b9 { margin-top: -0.2%; }
 .button__6e2b9 { margin-top: -0.2%; }
